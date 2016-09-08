@@ -8,9 +8,9 @@
   echo Zeile 1 eingeben
   read zeile1
   echo Zeile 2 eingeben
-  read zeile2
-  echo Zeile 3 eingeben
   read zeile3
+  echo Zeile 3 eingeben
+  read zeile2
   echo Zeile 4 eingeben
   read zeile4
   echo untertitel eingeben
