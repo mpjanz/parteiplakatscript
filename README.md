@@ -2,7 +2,7 @@
 
 ## Description
 Script for generating Posters for the German Political Party '[Die PARTEI](https://die-partei.de)'.
-dependencys are [sed]() and [inkscape](https://inkscape.org/en/download/)
+dependencys are [sed](http://sed.sourceforge.net/grabbag/ssed/) and [inkscape](https://inkscape.org/en/download/)
 
 ## Usage
 Background images can be used by placing a png file in the same Directory as the script an naming them 'hintergrund.png'.
