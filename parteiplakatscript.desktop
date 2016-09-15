@@ -3,7 +3,7 @@
 # This file is a self-modifying .desktop file that can be run from the shell.
 # It preserves arguments and environment for the start-tor-browser script.
 #
-# Run './start-tor-browser.desktop --help' to display the full set of options.
+# Run './parteiplakatscript --help' to display the full set of options.
 #
 # When invoked from the shell, this file must always be in a Tor Browser root
 # directory. When run from the file manager or desktop GUI, it is relocatable.
@@ -11,14 +11,14 @@
 # After first invocation, it will update itself with the absolute path to the
 # current TBB location, to support relocation of this .desktop file for GUI
 # invocation. You can also add Tor Browser to your desktop's application menu
-# by running './start-tor-browser.desktop --register-app'
+# by running './parteiplakatscript.desktop --register-app'
 #
-# If you use --register-app, and then relocate your TBB directory, Tor Browser
+# If you use --register-app, and then relocate your parteiplakatscript directory, parteiplakatscript
 # will no longer launch from your desktop's app launcher/dock. However, if you
 # re-run --register-app from inside that new directory, the script
 # will correct the absolute paths and re-register itself.
 #
-# This file will also still function if the path changes when TBB is used as a
+# This file will also still function if the path changes when parteiplakatscript is used as a
 # portable app, so long as it is run directly from that new directory, either
 # via the shell or via the file manager.
 
@@ -29,7 +29,7 @@ GenericName=Parteiplakatscript
 Comment=Script zum erstellen von DiePARTEI Plakaten
 Categories=Script;Graphics;Politics;
 Terminal=true
-Exec=sh -c '"/home/$USER/parteiplakatscript/parteitemplate2.1.1.sh" --detach || ([ !  -x "/home/$USER/parteiplakatscript/parteitemplate2.1.1.sh" ] && "$(dirname "$*")"/home/$USER/parteiplakatscript/ --detach)' dummy %k
-X-TorBrowser-ExecShell=./parteitemplate2.1.1.sh --detach
+Exec=sh -c '"/home/$USER/parteiplakatscript/parteitemplate2.2.sh" --detach || ([ !  -x "/home/$USER/parteiplakatscript/parteitemplate2.2.sh" ] && "$(dirname "$*")"/home/$USER/parteiplakatscript/ --detach)' dummy %k
+X-TorBrowser-ExecShell=./parteitemplate2.2.sh --detach
 Icon=/usr/share/icons/hicolor/32x32/apps/inkscape.png
 StartupWMClass=parteiscript
