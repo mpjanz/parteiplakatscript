@@ -30,7 +30,7 @@
   sed -i -e "s/Zeile4/$zeile4/g" $ordner/tempdaten~
   sed -i -e "s/untertitel/$untertitel/g" $ordner/tempdaten~
   sed -i -e "s/kreisverband/$kreisverband/g" $ordner/tempdaten~
-  sed -i -e "s*internetadresse&*$homepage*g" $ordner/tempdaten~
+  sed -i -e "s^internetadresse^$homepage^g" $ordner/tempdaten~
 
 
   daten=$(<$ordner/tempdaten~)
